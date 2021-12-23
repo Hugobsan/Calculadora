@@ -1,0 +1,20 @@
+.cinza-clarinho{
+  color:#cfcfcf
+}
+body{ 
+  background-image: linear-gradient(to right, #0e0d0d , #3b3a3a, #0e0d0d);
+  padding-bottom: 150px;
+}
+footer{
+  background-color: #cfcfcf;
+  padding: 20px;
+  font-weight: bold;
+  color:#3b3a3a;
+}
+input{
+  width:150px;
+}
+#resposta{
+  margin-top: 10px;
+  color: #e72525; 
+}
