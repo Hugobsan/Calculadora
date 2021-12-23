@@ -38,5 +38,13 @@ text-decoration: underline;
   font-size: 40px;
   color: cornsilk;
 }
-
+.sign
+{
+  text-align: end;
+  color: rgb(33, 20, 212);
+  margin-bottom: 10%;
+  text-orientation: sideways-right;
+  text-align-last: right;
+  display: space;
+}
 body{ background-color: black; }
