@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="icon.jpg">
+    <title>Calculadora De Faltas</title>
+  </head>
+
+  <body style="background-color: black;">
+    <button type="button" class="button" >
+      <a href="index.html" class="site"> Calculadora de nota da prova final </a>
+    </button>
+    <h1 class="title" style="color: cornsilk;"> Calculadora de faltas semestrais </h1>
+    <form oninput="num.value=calc_falta(cargahoraria.value, jafaltado.value)">
+      <p class="enunciado"> Digite quantas aulas por semana tem a disciplina ou a carga horária da ementa </p>
+      <input type="number" name="cargahoraria" value=""/>
+      <p class="enunciado"> Caso você já tenha faltas, digite-as no campo abaixo </p>
+      <input type="number" name="jafaltado" value=""/>
+      <p class="enunciado"> Quantidade de aulas que pode estar ausente: <output name="num" class="output" ></output></p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

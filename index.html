@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>NotaFinal</title>
-    <link href="sttyle.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="icon.jpg"> 
   </head>
     <style type="tezt/css">
     </style>
   <body>
-    <div class="site-nav middle">
-      <a class="site-nav-logo" target="_blank" href="https://unimontes.br">
-      </a>
-    </div>
-    <h1 class="tezt"> Cálculo de nota de prova Final Mínima </h1>
-    <h2 class="ba"> Digite sua nota semestral</h2>
-    <form oninput="num.value= Calc(a.value);">
+    <button type="button" class="button" >
+      <a href="site.html" class="site"> Calculadora de faltas </a>
+    </button>
+    <h1 class="title"> Calculadora de nota mínima da prova final </h1>
+    <h2 class="enunciado"> Digite sua nota semestral (valores maiores que 40 e menores que 70)</h2>
+    <form oninput="num.value= Calc_Nota(a.value);">
       <p class="nota_digitada">
         <input class="nota_digitada" type="number" name="a" value=""/>
       </p>
-      <p class="ba">Você precisa tirar <output class="nota" name="num"></output> para passar.
+      <p class="enunciado">Você precisa tirar <output class="output" name="num"></output> para passar.
       <p></p>
     </form>
     <script src="script.js"></script>
