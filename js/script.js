@@ -1,15 +1,21 @@
-function calc_falta(ch, jaf){
-  ch = parseInt(ch)
-  if (ch<12){
+function calc_falta(){
+  ch = window.document.getElementById('ch')
+  ch = ch.value
+  jaf = window.document.getElementById('jaf')
+  jaf=jaf.value
+  resp=window.document.getElementById('resposta')
+  
+  if (ch<=12){
     ch = ch*18
     ch = (ch *0.25).toFixed(0)
   }
   else
     ch = (ch *0.25).toFixed(0)
+  ch = ch - jaf
 
-  if(jaf != 0)
-    ch = ch - jaf
-  return ch
+  ch<0 ? resp.style.color="#e72525" : resp.style.color='#cfcfcf' //Definindo a cor quando é positivo ou negativo
+  resp.innerHTML="Quantidade de aulas que pode estar ausente: "+ch
+
 }
 
 function Calc_Nota(){
